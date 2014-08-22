@@ -1,0 +1,213 @@
+<head>
+  <title>KPM</title>
+</head>
+
+<body>
+  <!--{{> hello}}-->
+  {{> login }}
+  {{>register }}
+  {{> gra }}
+  <!--{{> coward}}
+  {{> first}}
+  {{> tie}}-->
+  {{> wynik }}
+
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  <input type="button" value="Click" />
+</template>
+
+<template id="loginT" name="login">
+  <div class="modal show login">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3><center>Kamień Papier i Nożyce</center></h3>
+      <h4 class="muted"><center>Zaloguj się lub utwórz konto</center></h4>
+    </div>
+    <div class="modal-body">
+      <form class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label" for="inputLogin">Login</label>
+          <div class="controls">
+            <input type="text" id="inputLogin" placeholder="Login">
+              </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputPass">Hasło</label>
+          <div class="controls">
+            <input type="password" id="inputPass" placeholder="Hasło">
+              </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+                        <a id="submitbtn" role="button" class="btn btn-danger">Zaloguj</a>
+            <a id="registerbtn" role="button" class="btn btn-success">Załóż konto</a>
+            
+            
+          </div>
+        </div>
+      </form>
+    </div>
+      </div>
+  
+  
+  
+</template>
+
+<template name="register">
+  <div  class="modal hide register">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h3><center>Załóż konto</center></h3>
+     </div>
+    <div class="modal-body">
+      <form class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label" for="inputlogin">Login</label>
+          <div class="controls">
+            <input type="text" id="inputlogin" placeholder="Login">
+              </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputpass">Hasło</label>
+          <div class="controls">
+            <input type="password" id="inputpass" placeholder="Hasło">
+              </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            
+            <button id="backbtn" type="submit" class="btn btn-danger">Cofnij</button>
+            <button id="registerbtn" type="submit" class="btn btn-success">Załóż konto</button>
+            
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>
+
+<template name="gra">
+  <div class="game">
+  	<div class="modal hide gra">
+    	<div class="modal-header">
+        <div class="row">
+          <div class="span3">
+            <button id="off" type="button" class="btn btn-danger">Nie chcę grać</button>
+          </div>
+          <div class="span19">
+            <h3><center>Wybierz broń</center></h3>
+          </div>
+         </div>
+    	</div>
+    
+    <div class="modal-body">
+  			<div class="row">
+  				<div class="span3 offset3">
+	          <img id="kam" class="img-btn kamien hide" src="http://api.ning.com/files/LAl787uzrCBNj78tFGC9a8RUl82ZJxLeO1FeJCK57wnj015hTmfxgTR*BHCWuy8aeQXYG-GuEdjLqnXTuB1ihGXoJCL5418X/Rolling_Stone_Animation_by_shadixART.gif">
+  				</div>
+  			</div>
+  			
+  			<div class="row">
+          <div class="span3 offset1">
+            <img id="pap" class="img-btn papier hide" src="http://fc03.deviantart.net/fs70/f/2012/243/a/f/paper_plane_by_bagam-d5d1sht.gif">
+  				</div>
+  				<div class="span3 offset1">
+            <img id="noz" class="img-btn nozyce hide" src="http://31.media.tumblr.com/ff501d3e5dda6aba90511a656a96a939/tumblr_mu783dmNnD1rqf6m7o1_250.gif">
+  				</div>
+  			</div>
+    	</div>
+  	</div>
+  </div>
+</template>
+<!--
+<template name="vs">
+  <div class="game">
+  	<div class="modal hide">
+      <div class="modal-body">
+  			<div class="row">
+  				<div class="span3 offset3">
+	          <img id="kam" class="img-btn kamien hide" src="https://www.dropbox.com/s/bpfs49f2l8jcvao/rock.png?dl=1">
+              </div>
+  			</div>
+  			
+  			<div class="row">
+          <div class="span3 offset1">
+            <img id="pap" class="img-btn papier hide" src="https://www.dropbox.com/s/reloztm3omt2dn7/paper.png?dl=1">
+              </div>
+  				<div class="span3 offset1">
+            <img id="noz" class="img-btn nozyce hide" src="https://www.dropbox.com/s/dtbt1ujj3d7owr5/scissors.png?dl=1">
+              </div>
+  			</div>
+    	</div>
+  	</div>
+  </div>
+</template>
+-->
+
+<template name="coward">
+
+  <div  class="modal hide cowardx">
+    <div class="modal-header">
+     </div>
+    <div class="modal-body">
+      <form class="form-horizontal">
+		<h1><center>COWARD</center></h1>
+      </form>
+    </div>
+  </div>
+</template>
+
+<template name="wynik">
+  <div class="game">
+  <div class="modal hide wynik">
+    <div class="modal-body">
+      <div class="row">
+        <div class="span2">
+          <button id="again" type="button" class="btn btn-danger">Jeszcze raz</button>
+        </div>
+        
+        <div class="span4">
+          <h1 id="wynikTitle"><center>wynik</center></h1>
+        </div>
+      </div>
+      <div class="row">
+        </div>
+      <div class="row"  style="margin-top:15%">
+        <div class="span3 offset3">
+          <img id="wynikImg" class="img-btn" src="https://www.dropbox.com/s/bpfs49f2l8jcvao/rock.png?dl=1">
+        </div>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+  </div>
+</template>
+
+<template name="tie">
+
+  <div  class="modal hide remis">
+    <div class="modal-header">
+     </div>
+    <div class="modal-body">
+      <form class="form-horizontal">
+		<h1><center>REMIS!</center></h1>
+      </form>
+    </div>
+  </div>
+</template>
+
+
+
+
+
+
+
+
+
+

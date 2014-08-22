@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(47,47,47);
+}
+
+.login {
+  background-color: rgb(40,40,40);
+  color: white;
+}
+
+.register {
+  background-color: rgb(40,40,40);
+  color: white;
+}
+
+.modal-header {
+  border-bottom: 1px solid rgb(47,47,47);
+}
+.game > .modal,
+.game > .modal-body,
+.game > .modal-header{
+	width: 66%;
+	margin-left: -33%;
+  background-color: white;
+  color: black;
+	
+}
+
+.game > .modal {
+	margin-top: -3%;
+  height: 90%;
+	
+}
+
+.game > .modal-body {
+  height: 80%;
+	
+}
+
+
+
+.img-btn {
+	width:200px;
+	height:200px;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader;
+}
+
+.img-btn:hover {
+  background-color: rgb(47,47,47);
+}
+
+th {
+	font-family: Arial;
+	font-size: 20px;
+	color: green;
+}
+.guziki {
+	padding-top:50px;
+	margin-left: 20em;
+}
+
